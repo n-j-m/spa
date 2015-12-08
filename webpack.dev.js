@@ -4,7 +4,7 @@ var merge = require("webpack-merge");
 
 var mergeCommon = merge.bind(null, require("./webpack.common"));
 
-var app = require("./bin/server");
+var app = require("./bin/bootstrap");
 
 app.listen(process.env.PORT, function() {
   console.log("backend listening on port", process.env.PORT);
